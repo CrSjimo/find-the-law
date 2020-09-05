@@ -1,0 +1,34 @@
+{
+  "name": "find-the-law",
+  "version": "1.0.0",
+  "description": "Find the law of an array.",
+  "main": "out/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha out/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrSjimo/find-the-law.git"
+  },
+  "keywords": [
+    "math",
+    "114514"
+  ],
+  "author": "Crindzebra",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/CrSjimo/find-the-law/issues"
+  },
+  "homepage": "https://github.com/CrSjimo/find-the-law#readme",
+  "dependencies": {
+    "@types/mathjs": "^6.0.5",
+    "fraction.js": "^4.0.12",
+    "mathjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
