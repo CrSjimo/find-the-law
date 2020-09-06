@@ -27,7 +27,7 @@
     "@material/mwc-button": "^0.18.0",
     "@material/mwc-textfield": "^0.18.0",
     "@types/markdown-it": "^10.0.2",
-    "find-the-law": "^1.0.5",
+    "find-the-law": "^1.0.6",
     "markdown-it": "^11.0.0",
     "markdown-it-katex": "^2.0.3"
   },
