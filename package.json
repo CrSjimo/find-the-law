@@ -1,6 +1,6 @@
 {
   "name": "find-the-law",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Find the law of an array.",
   "main": "out/index.js",
   "scripts": {
