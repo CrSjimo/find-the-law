@@ -1,4 +1,10 @@
 /**
+ * Code by Lovasoa
+ * https://github.com/lovasoa/linear-solve
+ * MIT License
+ */
+
+/**
  * Gauss-Jordan elimination
  */
 
@@ -73,7 +79,7 @@ class Mat{
  */
     hasNullLine (i:number) {
         for (var j=0; j<this.data[i].length; j++) {
-            if (this.data[i][j].a !== 0n) {
+            if (this.data[i][j].a != 0n) {
                 return false;
             }
         }
@@ -88,15 +94,15 @@ class Mat{
 
         for (var j=0; j<columns; j++) {
             // Find the line on which there is the maximum value of column j
-            var maxValue = new Fraction(0n), maxLine = 0;
+            var maxValue = new Fraction(0), maxLine = 0;
             for (var k=pivot; k<lines; k++) {
                 var val = this.data[k][j];
-                if (val.abs() > maxValue.abs()) {
+                if (val.abs().cmp(maxValue.abs())>0) {
                     maxLine = k;
                     maxValue = val;
                 } 
             }
-            if (maxValue.a === 0n) {
+            if (maxValue.a == 0n) {
                 // The matrix is not invertible. The system may still have solutions.
                 nullLines.push(pivot);
             } else {
