@@ -17,7 +17,7 @@ export function linearFuncToLatex(func:Fraction[]){
     func.forEach((v,i)=>{
         if(v.a){
             let t = fractionToLatex(v);
-            a.push(`${t!='1'||i==n-1?t:''} ${i!=n-1?i!=n-2?`x^${n-i-1}`:'x':''}`);
+            a.push(`${t!='1'||i==n-1?t:''} ${i!=n-1?i!=n-2?`x^{${n-i-1}}`:'x':''}`);
         }
     })
     return `f(x)=${a.join('+').replace(/\+\-/g,'-')}`;
