@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>数列找规律</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+        <link href="layout.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <h1>数列找规律</h1>
+            <mwc-textfield id="input" label="数列" helper="请输入用空格分隔的数列。数字支持整数，浮点数和分数。用“?”代替空缺。"></mwc-textfield>
+            <div id="article"></div>
+            <div id="button-field">
+                <mwc-button id="copy-latex" raised disabled icon="content_copy" label="复制公式（LaTeX）"></mwc-button>
+                <mwc-button id="copy-plain" raised disabled icon="content_copy" label="复制公式（纯文本）"></mwc-button>
+                <mwc-button id="copy-article" raised disabled icon="content_copy" label="复制文章（markdown）"></mwc-button>
+                <mwc-button id="clear" raised disabled icon="delete" label="清除"></mwc-button>
+            </div>
+            <textarea id="copy-container" style="display: none;"></textarea>
+        </div>
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>

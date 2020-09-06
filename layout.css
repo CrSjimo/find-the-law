@@ -1,0 +1,32 @@
+body{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+@media(max-width:800px){
+    mwc-button{
+        width:100%;
+        margin: 4px 0;
+    }
+}
+
+#main{
+    margin: 0 8px;
+}
+
+#input{
+    width: 100%;
+}
+
+.katex-html{
+    display: none;
+}
+
+#article{
+    text-align: left;
+}
+
+#article.error{
+    color: red;
+}
