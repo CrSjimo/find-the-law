@@ -19,9 +19,9 @@ body{
     width: 100%;
 }
 
-.katex-html{
+/* .katex-html{
     display: none;
-}
+} */
 
 #article{
     text-align: left;
